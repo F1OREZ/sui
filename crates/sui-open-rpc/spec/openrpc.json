@@ -1091,7 +1091,7 @@
   "components": {
     "schemas": {
       "AuthorityQuorumSignInfo": {
-        "description": "Represents at least a quorum (could be more) of authority signatures.",
+        "description": "Represents at least a quorum (could be more) of authority signatures. STRONG_THRESHOLD indicates whether to use the quorum threshold for quorum check. When StrongThreshold is true, the quorum is valid when the total stake is at least the quorum threshold of the committee; when STRONG_THRESHOLD is false, the quorum is valid when the total stake is at least the validity threshold of the committee.",
         "type": "object",
         "required": [
           "epoch",
